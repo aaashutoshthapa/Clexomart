@@ -1,0 +1,25 @@
+.box {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.button.is-primary {
+    background-color: #8BAF6C !important;
+    border: none !important;
+}
+
+.button.is-primary:hover {
+    background-color: #A8C686 !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.input {
+    border-color: #ddd !important;
+}
+
+.input:focus {
+    border-color: #8BAF6C !important;
+    box-shadow: 0 0 5px rgba(139, 175, 108, 0.5) !important;
+}

@@ -1,0 +1,114 @@
+
+  
+/* Footer background and text */
+.custom-footer {
+    background-color: #A8C686;
+    color: #333333 !important;
+    padding: 2rem 1rem;
+}
+
+/* Brand name styling */
+.footer-brand {
+    color: #333333 !important;
+    font-weight: 700;
+    margin-bottom: 0; /* Removes space under title */
+    line-height: 1.2;
+}
+
+/* Tagline under brand */
+span.line {
+    margin-top: 0;
+    color: #4D4D4D !important;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+a.footer-email {
+    color: #333333 !important;
+}
+
+a.footer-email:hover {
+    color:  #F0355E !important;
+}
+/* Section titles like 'Quick Links', 'Contact', 'Follow Us' */
+.footer .has-text-weight-bold {
+    color: #333333 !important;
+}
+
+/* List links */
+.footer ul li a {
+    color: #4D4D4D !important;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #F0355E !important; /* Optional highlight on hover */
+}
+
+/* Contact info labels */
+.footer-label {
+    font-weight: 600;
+    color: #4D4D4D;
+}
+
+/* Social buttons */
+.social-buttons a {
+    display: inline-block;
+    font-size: 1.3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+/* Social media icons on footer*/
+.icon_facebook {
+    color: #3b5998; /* Facebook blue */
+  }
+  .icon_facebook:hover {
+        scale: 1.2; /* Facebook scale */
+  }
+  
+  .icon_twitter {
+    color: #1DA1F2; /* Twitter blue */
+  }
+  
+    .icon_twitter:hover {
+            scale: 1.2; /* Twitter  scale  */
+    }
+  
+    .icon_instagram {
+        color: #C13584; /* Instagram pink */
+    }
+  
+    .icon_instagram:hover {
+        scale: 1.2; /* Instagram scale */
+    }
+
+    .icon_linkedin {
+        color: #485fc7;
+    }
+
+    .icon_linkedin:hover{
+        scale: 1.2;
+    }
+/* Footer copyright */
+.footer .is-size-7 {
+    color: #4D4D4D;
+    margin-top: 2rem;
+}
+
+/* Reduce bottom margin on the column group */
+.custom-footer .columns {
+    margin-bottom: 0.5rem; /* You can try 0 if you want no gap */
+}
+
+/* Remove top margin on the copyright section */
+.custom-footer .content.has-text-centered.is-size-7 {
+    margin-top: 0.5rem; /* Adjust lower if needed */
+}

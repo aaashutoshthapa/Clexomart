@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Tests\\Feature\\CartClearAfterPaymentTest::test_cart_is_cleared_after_successful_payment":8,"Tests\\Feature\\CartClearAfterPaymentTest::test_session_cart_is_cleared_after_payment":8},"times":[]}

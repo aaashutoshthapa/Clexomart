@@ -1,0 +1,108 @@
+        /* Vendor Dashboard Specific Styles */
+        .dashboard-header {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .dashboard-card {
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-header {
+            background-color: #FED549;
+            padding: 1rem;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333333;
+        }
+        
+        .stat-label {
+            color: #4D4D4D;
+            font-size: 1rem;
+        }
+        
+        .product-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        
+        .review-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .review-rating {
+            color: #FED549;
+        }
+        
+        .file-cta {
+            background-color: #FED549;
+            color: #333333;
+            border: none;
+        }
+        
+        .file-cta:hover {
+            background-color: #Fbc02d;
+        }
+        
+        .sidebar {
+margin-top: 2rem;
+            background-color: #ffffff;
+            max-height: 80vh;
+            padding: 4px;
+
+        }
+        
+        .sidebar-menu {
+            margin-top: 3rem;
+            padding: 1rem;
+            background-color: #ffffff;
+
+        }
+       
+        .sidebar-item {
+            margin-top: 10px;
+            padding: 1rem 1rem;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+            color: #333333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .sidebar-item:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .sidebar-item.is-active {
+            background-color: #A8C686;
+            color: white;
+        }
+        
+        .sidebar-item .icon {
+            margin-right: 0.5rem;
+        }

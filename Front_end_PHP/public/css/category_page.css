@@ -1,0 +1,332 @@
+/* === RESPONSIVE CATEGORY PAGE DESIGN === */
+/* Mobile-first approach with progressive enhancement */
+
+/* Shops Carousel Styles (Responsive) */
+.category-carusel-container {
+    margin: 0 -1rem;
+    background-color: #FED549;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.category-carousel {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 1rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.category-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.category-shop-label {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.category-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.category-logo:hover {
+    transform: scale(1.1);
+}
+
+.category-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* === FILTER AND SORT RESPONSIVE === */
+.filter-dropdown, .sort-dropdown {
+    position: relative;
+}
+
+.filter-dropdown .dropdown-menu, .sort-dropdown .dropdown-menu {
+    min-width: 200px;
+}
+
+.filter-button, .sort-button {
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-content {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.dropdown-item:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown-divider {
+    margin: 0.5rem 0;
+}
+
+.select.is-small, .input.is-small {
+    width: 100%;
+}
+
+.apply-filters {
+    display: block;
+    text-align: center;
+    color: #3273dc;
+    font-weight: bold;
+}
+
+.apply-filters:hover {
+    background-color: #f5f5f5;
+}
+
+.level-left .dropdown, .level-right .dropdown {
+    display: inline-block;
+}
+
+/* === CARD RESPONSIVENESS === */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    overflow: hidden;
+}
+
+.card-image img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+/* === RESPONSIVE IMAGES === */
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* === ITEMS CONTAINER RESPONSIVE === */
+.items-container {
+    margin: 0 -0.75rem;
+}
+
+.items-container .column {
+    padding: 0.75rem;
+}
+
+/* === MOBILE RESPONSIVE STYLES (up to 768px) === */
+@media screen and (max-width: 768px) {
+    /* Shop carousel mobile */
+    .category-carusel-container {
+        margin: 0;
+        padding: 0.8rem;
+    }
+    
+    .category-logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .category-shop-label {
+        font-size: 0.7rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    /* Filter and sort mobile */
+    .level {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .level-left, .level-right {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .filter-button, .sort-button {
+        font-size: 12px;
+        padding: 0.4rem 0.8rem;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .filter-dropdown .dropdown-menu, .sort-dropdown .dropdown-menu {
+        min-width: 180px;
+    }
+    
+    /* Product grid mobile */
+    .items-container .column.is-3 {
+        flex: none;
+        width: 100%;
+    }
+    
+    .items-container {
+        margin: 0 -0.5rem;
+    }
+    
+    .items-container .column {
+        padding: 0.5rem;
+    }
+    
+    /* Card content mobile */
+    .card-content .title {
+        font-size: 1rem;
+    }
+    
+    .card-content .subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .card-content .content {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
+
+/* === TABLET RESPONSIVE STYLES (769px to 1023px) === */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    /* Shop carousel tablet */
+    .category-logo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    /* Product grid tablet */
+    .items-container .column.is-3 {
+        flex: none;
+        width: 50%;
+    }
+    
+    /* Filter and sort tablet */
+    .filter-button, .sort-button {
+        font-size: 13px;
+        padding: 0.45rem 0.9rem;
+    }
+}
+
+/* === DESKTOP RESPONSIVE STYLES (1024px and up) === */
+@media screen and (min-width: 1024px) {
+    /* Shop carousel desktop */
+    .category-carusel-container {
+        margin: -40px -50px -50px -50px;
+        padding: 1.5rem;
+    }
+    
+    .category-logo {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .category-carousel {
+        gap: 1rem;
+        padding: 0 2rem;
+    }
+    
+    /* Product grid desktop */
+    .items-container .column.is-3 {
+        flex: none;
+        width: 25%;
+    }
+    
+    /* Filter and sort desktop */
+    .filter-button, .sort-button {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* === LARGE DESKTOP RESPONSIVE STYLES (1216px and up) === */
+@media screen and (min-width: 1216px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .items-container {
+        margin: 0 -1rem;
+    }
+    
+    .items-container .column {
+        padding: 1rem;
+    }
+}
+
+/* === PAGINATION RESPONSIVE === */
+.pagination {
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .pagination {
+        margin-top: 1rem;
+    }
+    
+    .pagination-link,
+    .pagination-ellipsis {
+        padding: 0.375rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* === ACCESSIBILITY IMPROVEMENTS === */
+@media (prefers-reduced-motion: reduce) {
+    .card,
+    .card-image img,
+    .category-logo {
+        transition: none !important;
+    }
+}
+
+/* === HOVER EFFECTS FOR TOUCH DEVICES === */
+@media (hover: none) {
+    .card:hover {
+        transform: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card:hover .card-image img {
+        transform: none;
+    }
+    
+    .category-logo:hover {
+        transform: none;
+    }
+} 

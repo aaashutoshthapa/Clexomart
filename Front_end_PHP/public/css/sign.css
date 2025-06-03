@@ -1,0 +1,32 @@
+
+
+  .login-box {
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    background-color: #f5f5f5 !important; 
+  }
+ 
+  .sign-btn{
+    background-color: #FBC02D !important;
+    color: #333333 !important;
+    border: none;
+  }
+
+  .sign-btn:hover{
+    color: #4d4d4d !important;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+
+  a.text,.fote{
+    color: #8BAF6C !important;
+    font-weight: 500;
+  }
+  a.text:hover, .fote:hover{
+    color: #A8C686 !important;
+  }
+
+  .btn{
+    border-radius: 20px !important;
+  }

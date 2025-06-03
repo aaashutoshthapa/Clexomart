@@ -1,0 +1,11 @@
+ /* Additional styles for products page */
+        .product-actions .button {
+            margin-right: 0.5rem;
+        }
+        .add-product-form {
+            margin-bottom: 2rem;
+        }
+        .product-image-preview {
+            max-height: 150px;
+            margin-bottom: 1rem;
+        }

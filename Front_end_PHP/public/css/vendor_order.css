@@ -1,0 +1,29 @@
+        /* Additional styles for orders page */
+        .order-status {
+            font-weight: 600;
+        }
+        .status-pending {
+            color: #FFA500;
+        }
+        .status-completed {
+            color: #32CD32;
+        }
+        .status-cancelled {
+            color: #FF0000;
+        }
+        .order-details {
+            margin-top: 1rem;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+        }
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        .order-total {
+            font-weight: 600;
+            border-top: 1px solid #eee;
+            padding-top: 0.5rem;
+            margin-top: 0.5rem;
+        }
